@@ -134,10 +134,11 @@ shapaar_bulk_convert <- function(p,
     img_crop <- max(img_crop) - img_crop
 
     # save thumb
-    writeImage(toRGB(img_crop), paste(p,
-                                      f[i],
-                                      '_thumb.png',
-                                      sep = ''))
+    EBImage::writeImage(img_crop,
+                        paste(p,
+                              f[i],
+                              '_thumb.png',
+                              sep = ''))
 
     # saving the contour vector according to specifications
     deviance <- sd(c_left - c_right) / length(c_left)
