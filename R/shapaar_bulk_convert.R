@@ -1,4 +1,4 @@
-#' Extracting the conture from a bulk of scanned images
+#' Extracting the conture from a bulk of scanned images in one folder
 #'
 #' @param p the path to the directory with the images (results will be placed alongside originals)
 #' @param ext the file extention to be used; at the moment only PNG is supported)
@@ -13,7 +13,7 @@
 #' @export
 
 
-bulkIMGprep <- function(p,
+shapaar_bulk_convert <- function(p,
                         ext = 'png',
                         thresh = 0.02,
                         v = 1,
